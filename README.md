@@ -1,4 +1,4 @@
-# 📚 *Projeto Biblioteca Java com Spring*
+# 📦 *Projeto Produto Java com Spring*
 
 ## 📌 Sobre o Projeto
 Este projeto feito na linguagem Java com o framework Spring, contendo operações CRUD e validações essenciais. 
