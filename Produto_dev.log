@@ -1,201 +1,201 @@
-2024-11-28T19:25:01.046-03:00  INFO 16152 --- [Produto] [restartedMain] com.prova.Produto.ProdutoApplication     : Starting ProdutoApplication using Java 17.0.12 with PID 16152 (C:\ProjetoSpring\Produto\target\classes started by Vitinho in C:\ProjetoSpring\Produto)
-2024-11-28T19:25:01.054-03:00  INFO 16152 --- [Produto] [restartedMain] com.prova.Produto.ProdutoApplication     : The following 1 profile is active: "dev"
-2024-11-28T19:25:01.141-03:00  INFO 16152 --- [Produto] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-11-28T19:25:01.141-03:00  INFO 16152 --- [Produto] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-11-28T19:25:02.001-03:00  INFO 16152 --- [Produto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-28T19:25:02.053-03:00  INFO 16152 --- [Produto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
-2024-11-28T19:25:03.298-03:00  INFO 16152 --- [Produto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-11-28T19:25:03.314-03:00  INFO 16152 --- [Produto] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-28T19:25:03.314-03:00  INFO 16152 --- [Produto] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-28T19:25:03.370-03:00  INFO 16152 --- [Produto] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-28T19:25:03.370-03:00  INFO 16152 --- [Produto] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2229 ms
-2024-11-28T19:25:03.419-03:00  INFO 16152 --- [Produto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-28T19:25:03.720-03:00  INFO 16152 --- [Produto] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76fa1bf8
-2024-11-28T19:25:03.720-03:00  INFO 16152 --- [Produto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-28T19:25:03.736-03:00  INFO 16152 --- [Produto] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/Produto'
-2024-11-28T19:25:03.951-03:00  INFO 16152 --- [Produto] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-28T19:25:04.093-03:00  INFO 16152 --- [Produto] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-28T19:25:04.166-03:00  INFO 16152 --- [Produto] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-28T19:25:04.283-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@1f3c4cc1
-2024-11-28T19:25:04.283-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@1f3c4cc1
-2024-11-28T19:25:04.283-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@1f3c4cc1
-2024-11-28T19:25:04.283-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@49095f14
-2024-11-28T19:25:04.283-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@49095f14
-2024-11-28T19:25:04.283-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@4ef4f5ff
-2024-11-28T19:25:04.283-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@4ef4f5ff
-2024-11-28T19:25:04.283-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@6fa0dceb
-2024-11-28T19:25:04.283-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@6fa0dceb
-2024-11-28T19:25:04.283-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@1287df9a
-2024-11-28T19:25:04.283-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@1287df9a
-2024-11-28T19:25:04.283-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@1287df9a
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@1175c321
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@1175c321
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@1175c321
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@3d3e2d32
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@3d3e2d32
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@26d9d7f
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@46d19aa0
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@46d19aa0
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@1dbf2c6b
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@51a4c553
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@3fcc2c7d
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@3fcc2c7d
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@3fcc2c7d
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@7502a5be
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@7502a5be
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@7502a5be
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@113a0301
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@113a0301
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@113a0301
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@66c3c228
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@66c3c228
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@66c3c228
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@38b2b549
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@38b2b549
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@38b2b549
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@58fdc8b4
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@58fdc8b4
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@199eeaa1
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@199eeaa1
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@61b4b938
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@61b4b938
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@61b4b938
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@4c0140ba
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@7a0f99e6
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@7a0f99e6
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@142aafe4
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@5013a920
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@5013a920
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@5013a920
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@16513708
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@10175c8d
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@510394e4
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@1c947d4d
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@1c947d4d
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@3e2e0a0
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@3e2e0a0
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@293b3765
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@64523212
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@5b9355c0
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@4fe049f2
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@3f10df74
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@4a27b826
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@b5bc9f7
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@b5bc9f7
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@46b9aeb7
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@46b9aeb7
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@7feb226b
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@7feb226b
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@8fa4338
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@8fa4338
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@5dbb37a1
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@5dbb37a1
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@567cf6b7
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@70a26e69
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@2a1b10c6
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@2a1b10c6
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@2e193c1b
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@1fe1ae21
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@7cd34a92
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@e3cf8ee
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@e3cf8ee
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@69a2e4d6
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@7ba0df65
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@1dc19d59
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@1dc19d59
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@74d3ed87
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@74d3ed87
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@a29239f
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@a29239f
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@a29239f
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@778f9e48
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@778f9e48
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@778f9e48
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@66b5eeb5
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@d618831
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@4e9767d9
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@4e9767d9
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@45e1dd9d
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@45e1dd9d
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@45e1dd9d
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@ce843d2
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@dc9627e
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@781565b1
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@781565b1
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@33d3521b
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@33d3521b
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@33d3521b
-2024-11-28T19:25:04.291-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@7d6b6160
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@7d6b6160
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@3bf73621
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@3bf73621
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@681cf403
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@681cf403
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@41763091
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@41763091
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@67b039be
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@67b039be
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@65f45d57
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@6ac71106
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@614b1eac
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@614b1eac
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@9ef5bb4
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@792e1ba9
-2024-11-28T19:25:04.300-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@66fb4738
-2024-11-28T19:25:04.308-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@1fc666fd
-2024-11-28T19:25:04.308-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@6c87ac4a
-2024-11-28T19:25:04.308-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@65fd0120
-2024-11-28T19:25:04.308-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@59035820
-2024-11-28T19:25:04.308-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@75de3c73
-2024-11-28T19:25:04.308-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@246a3b7e
-2024-11-28T19:25:04.568-03:00  INFO 16152 --- [Produto] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-28T19:25:04.692-03:00 DEBUG 16152 --- [Produto] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@116503a0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@598f0c29)
-2024-11-28T19:25:04.692-03:00 DEBUG 16152 --- [Produto] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@39b4b9e8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@34891832)
-2024-11-28T19:25:04.692-03:00 DEBUG 16152 --- [Produto] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2004, BlobTypeDescriptor(BLOB_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
-2024-11-28T19:25:04.692-03:00 DEBUG 16152 --- [Produto] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(CLOB_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
-2024-11-28T19:25:04.700-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration JAVA_OBJECT -> org.hibernate.type.JavaObjectType@35019ece
-2024-11-28T19:25:04.700-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@35019ece
-2024-11-28T19:25:04.700-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Type registration key [java.lang.Object] overrode previous entry : `org.hibernate.type.JavaObjectType@614b1eac`
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
-2024-11-28T19:25:04.704-03:00 DEBUG 16152 --- [Produto] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@341a5c70] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7c970e]
-2024-11-28T19:25:05.539-03:00  INFO 16152 --- [Produto] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-28T19:25:05.539-03:00 DEBUG 16152 --- [Produto] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@341a5c70] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@4fa58cc7]
-2024-11-28T19:25:05.555-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:52.155-03:00  INFO 784 --- [Produto] [restartedMain] com.prova.Produto.ProdutoApplication     : Starting ProdutoApplication using Java 17.0.12 with PID 784 (C:\ProjetoSpring\Produto\target\classes started by Vitinho in C:\ProjetoSpring\Produto)
+2025-02-20T20:47:52.164-03:00  INFO 784 --- [Produto] [restartedMain] com.prova.Produto.ProdutoApplication     : The following 1 profile is active: "dev"
+2025-02-20T20:47:52.242-03:00  INFO 784 --- [Produto] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-20T20:47:52.242-03:00  INFO 784 --- [Produto] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-20T20:47:53.185-03:00  INFO 784 --- [Produto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20T20:47:53.232-03:00  INFO 784 --- [Produto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2025-02-20T20:47:54.241-03:00  INFO 784 --- [Produto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-20T20:47:54.272-03:00  INFO 784 --- [Produto] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-20T20:47:54.272-03:00  INFO 784 --- [Produto] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-02-20T20:47:54.341-03:00  INFO 784 --- [Produto] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-20T20:47:54.341-03:00  INFO 784 --- [Produto] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2099 ms
+2025-02-20T20:47:54.404-03:00  INFO 784 --- [Produto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-20T20:47:54.774-03:00  INFO 784 --- [Produto] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7777a606
+2025-02-20T20:47:54.774-03:00  INFO 784 --- [Produto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-20T20:47:54.805-03:00  INFO 784 --- [Produto] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/Produto'
+2025-02-20T20:47:55.059-03:00  INFO 784 --- [Produto] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20T20:47:55.183-03:00  INFO 784 --- [Produto] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-02-20T20:47:55.244-03:00  INFO 784 --- [Produto] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@602897c4
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@602897c4
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@602897c4
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@25e2883
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@25e2883
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@5300d43f
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@5300d43f
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@661ea38f
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@661ea38f
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@422c9e3f
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@422c9e3f
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@422c9e3f
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@31c5bcc9
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@31c5bcc9
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@31c5bcc9
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@515b478d
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@515b478d
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@4de49a9b
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@20873af2
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@20873af2
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@50c6fd30
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@5b2abf8a
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@32f3d636
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@32f3d636
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@32f3d636
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@2bba2a30
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@2bba2a30
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@2bba2a30
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@4cf27d0a
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@4cf27d0a
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@4cf27d0a
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@42aa4df1
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@42aa4df1
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@42aa4df1
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@6e4471f4
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@6e4471f4
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@6e4471f4
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@14553da6
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@14553da6
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@4b90180b
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@4b90180b
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@5bc5114d
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@5bc5114d
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@5bc5114d
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@16431010
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@2bc6b773
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@2bc6b773
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@605db240
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@13e1887f
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@13e1887f
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@13e1887f
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@1dacc983
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@34f986a
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@e0df5f1
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@1130263f
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@1130263f
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@6aab054b
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@6aab054b
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@15d85cbc
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@741b818b
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@640a50e9
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@5639807e
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@1d31bb9
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@296cd5d1
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@1fd7550d
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@1fd7550d
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@5f70cf9
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@5f70cf9
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@1c60c12d
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@1c60c12d
+2025-02-20T20:47:55.360-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@536d5d2d
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@536d5d2d
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@76370570
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@76370570
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@4b9a4f8b
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@51e9967c
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@68d43d59
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@68d43d59
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@2686a9b6
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@3f795cfa
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@22be771f
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@6b49a8e4
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@6b49a8e4
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@78917722
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@dfa6a46
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@5cadf269
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@5cadf269
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@7a856f90
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@7a856f90
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@95e3f85
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@95e3f85
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@95e3f85
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@57a8ccb2
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@57a8ccb2
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@57a8ccb2
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@64254294
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@350d486f
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@4d57fb5c
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@4d57fb5c
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@5c8b7318
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@5c8b7318
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@5c8b7318
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@1274bbff
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@4d65c7ee
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@3f9a5805
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@3f9a5805
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@380eff5d
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@380eff5d
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@380eff5d
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@f1200e0
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@f1200e0
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@6c2bec5b
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@6c2bec5b
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@19ccbab
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@19ccbab
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@4ea738d2
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@4ea738d2
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@512d24e6
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@512d24e6
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@625743ac
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@5f10dde
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@56218740
+2025-02-20T20:47:55.376-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@56218740
+2025-02-20T20:47:55.391-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@39dca2f4
+2025-02-20T20:47:55.391-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@cbc9037
+2025-02-20T20:47:55.391-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@5f9575cc
+2025-02-20T20:47:55.391-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@7a022f50
+2025-02-20T20:47:55.391-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@2695e9e6
+2025-02-20T20:47:55.391-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@4ec0f82b
+2025-02-20T20:47:55.391-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@3a8fdf2a
+2025-02-20T20:47:55.391-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@519c0f84
+2025-02-20T20:47:55.391-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@58cf0688
+2025-02-20T20:47:55.738-03:00  INFO 784 --- [Produto] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20T20:47:55.892-03:00 DEBUG 784 --- [Produto] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@18b5521) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@31c23074)
+2025-02-20T20:47:55.892-03:00 DEBUG 784 --- [Produto] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7cb80eb5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@14b601bf)
+2025-02-20T20:47:55.892-03:00 DEBUG 784 --- [Produto] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2004, BlobTypeDescriptor(BLOB_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
+2025-02-20T20:47:55.892-03:00 DEBUG 784 --- [Produto] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(CLOB_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration JAVA_OBJECT -> org.hibernate.type.JavaObjectType@43e47f6c
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@43e47f6c
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Type registration key [java.lang.Object] overrode previous entry : `org.hibernate.type.JavaObjectType@56218740`
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2025-02-20T20:47:55.907-03:00 DEBUG 784 --- [Produto] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@83fdda3] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@2039b95b]
+2025-02-20T20:47:56.794-03:00  INFO 784 --- [Produto] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20T20:47:56.794-03:00 DEBUG 784 --- [Produto] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@83fdda3] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@b55c729]
+2025-02-20T20:47:56.810-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     alter table if exists produto 
        drop constraint if exists FKtaovk9dkbhhk2ujejtkv32wll
-2024-11-28T19:25:05.571-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.841-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     alter table if exists produto 
        drop constraint if exists FKciki63r7nyyex2fo5lwsl2ccw
-2024-11-28T19:25:05.571-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.841-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     drop table if exists estabelecimento cascade
-2024-11-28T19:25:05.579-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.847-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     drop table if exists produto cascade
-2024-11-28T19:25:05.587-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.847-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     drop table if exists vendedor cascade
-2024-11-28T19:25:05.587-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.863-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     drop sequence if exists seq_estabelecimento
-2024-11-28T19:25:05.595-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.863-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     drop sequence if exists seq_produto
-2024-11-28T19:25:05.595-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.863-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     drop sequence if exists seq_vendedor
-2024-11-28T19:25:05.603-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.863-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     create sequence seq_estabelecimento start with 1 increment by 50
-2024-11-28T19:25:05.611-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.879-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     create sequence seq_produto start with 1 increment by 50
-2024-11-28T19:25:05.611-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.879-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     create sequence seq_vendedor start with 1 increment by 50
-2024-11-28T19:25:05.619-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.879-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     create table estabelecimento (
         id_estabelecimento integer not null,
         cidade varchar(255) not null,
@@ -204,7 +204,7 @@
         nome_estabelecimento varchar(255) not null,
         primary key (id_estabelecimento)
     )
-2024-11-28T19:25:05.635-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.894-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     create table produto (
         avaliacao smallint check (avaliacao between 0 and 4),
         data_exposicao date,
@@ -220,7 +220,7 @@
         tamanho varchar(255) not null,
         primary key (id_produto)
     )
-2024-11-28T19:25:05.643-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.910-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     create table vendedor (
         id_vendedor integer not null,
         cargo varchar(255) not null,
@@ -231,1018 +231,54 @@
         salario varchar(255) not null,
         primary key (id_vendedor)
     )
-2024-11-28T19:25:05.651-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.910-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     alter table if exists produto 
        add constraint FKtaovk9dkbhhk2ujejtkv32wll 
        foreign key (idestabelecimento) 
        references estabelecimento
-2024-11-28T19:25:05.659-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.910-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     alter table if exists produto 
        add constraint FKciki63r7nyyex2fo5lwsl2ccw 
        foreign key (idvendedor) 
        references vendedor
-2024-11-28T19:25:05.667-03:00 TRACE 16152 --- [Produto] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@4fa58cc7] for TypeConfiguration
-2024-11-28T19:25:05.667-03:00  INFO 16152 --- [Produto] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-28T19:25:06.292-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:56.926-03:00 TRACE 784 --- [Produto] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@b55c729] for TypeConfiguration
+2025-02-20T20:47:56.926-03:00  INFO 784 --- [Produto] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20T20:47:57.527-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     select
         nextval('seq_vendedor')
-2024-11-28T19:25:06.373-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:57.612-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         vendedor
         (cargo, cep, cpf, nome_vendedor, rg, salario, id_vendedor) 
     values
         (?, ?, ?, ?, ?, ?, ?)
-2024-11-28T19:25:06.389-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:57.627-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     select
         nextval('seq_estabelecimento')
-2024-11-28T19:25:06.397-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:57.627-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         estabelecimento
         (cidade, cnpj, endereco, nome_estabelecimento, id_estabelecimento) 
     values
         (?, ?, ?, ?, ?)
-2024-11-28T19:25:06.397-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:57.627-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     select
         nextval('seq_produto')
-2024-11-28T19:25:06.405-03:00 DEBUG 16152 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
+2025-02-20T20:47:57.627-03:00 DEBUG 784 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         produto
         (avaliacao, categoria, data_exposicao, descricao, idestabelecimento, peso, qtd_vendido, status, tamanho, val_unit, idvendedor, id_produto) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2024-11-28T19:25:06.505-03:00  WARN 16152 --- [Produto] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-28T19:25:07.074-03:00  INFO 16152 --- [Produto] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-28T19:25:07.115-03:00  INFO 16152 --- [Produto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-11-28T19:25:07.131-03:00  INFO 16152 --- [Produto] [restartedMain] com.prova.Produto.ProdutoApplication     : Started ProdutoApplication in 6.528 seconds (process running for 8.974)
-2024-11-28T19:26:06.496-03:00  INFO 16152 --- [Produto] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-28T19:26:06.496-03:00  INFO 16152 --- [Produto] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-28T19:26:06.496-03:00  INFO 16152 --- [Produto] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-11-28T19:26:06.666-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
-    select
-        p1_0.id_produto,
-        p1_0.avaliacao,
-        p1_0.categoria,
-        p1_0.data_exposicao,
-        p1_0.descricao,
-        p1_0.idestabelecimento,
-        p1_0.peso,
-        p1_0.qtd_vendido,
-        p1_0.status,
-        p1_0.tamanho,
-        p1_0.val_unit,
-        p1_0.idvendedor 
-    from
-        produto p1_0
-2024-11-28T19:26:06.675-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0 
-    where
-        e1_0.id_estabelecimento=?
-2024-11-28T19:26:06.683-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.id_vendedor=?
-2024-11-28T19:27:26.064-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        p1_0.id_produto,
-        p1_0.avaliacao,
-        p1_0.categoria,
-        p1_0.data_exposicao,
-        p1_0.descricao,
-        p1_0.idestabelecimento,
-        p1_0.peso,
-        p1_0.qtd_vendido,
-        p1_0.status,
-        p1_0.tamanho,
-        p1_0.val_unit,
-        p1_0.idvendedor 
-    from
-        produto p1_0 
-    where
-        p1_0.descricao=?
-2024-11-28T19:27:26.072-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.id_vendedor=?
-2024-11-28T19:27:26.080-03:00  WARN 16152 --- [Produto] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.prova.Produto.services.exceptions.DataIntegrityViolationException: Vendedor - 2não esta cadastrado]
-2024-11-28T19:27:44.581-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.cpf=?
-2024-11-28T19:27:44.589-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.rg=?
-2024-11-28T19:27:44.589-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
-    select
-        nextval('seq_vendedor')
-2024-11-28T19:27:44.597-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
-    insert 
-    into
-        vendedor
-        (cargo, cep, cpf, nome_vendedor, rg, salario, id_vendedor) 
-    values
-        (?, ?, ?, ?, ?, ?, ?)
-2024-11-28T19:28:27.846-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.cpf=?
-2024-11-28T19:28:27.854-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.rg=?
-2024-11-28T19:28:27.854-03:00  WARN 16152 --- [Produto] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.prova.Produto.services.exceptions.DataIntegrityViolationException: Rg já cadastrado]
-2024-11-28T19:28:39.030-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.cpf=?
-2024-11-28T19:28:39.038-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.rg=?
-2024-11-28T19:28:39.038-03:00  WARN 16152 --- [Produto] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.prova.Produto.services.exceptions.DataIntegrityViolationException: Rg já cadastrado]
-2024-11-28T19:28:45.244-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.cpf=?
-2024-11-28T19:28:45.244-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.rg=?
-2024-11-28T19:28:45.252-03:00  WARN 16152 --- [Produto] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.prova.Produto.services.exceptions.DataIntegrityViolationException: Rg já cadastrado]
-2024-11-28T19:29:01.891-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.cpf=?
-2024-11-28T19:29:01.899-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.rg=?
-2024-11-28T19:29:01.899-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
-    insert 
-    into
-        vendedor
-        (cargo, cep, cpf, nome_vendedor, rg, salario, id_vendedor) 
-    values
-        (?, ?, ?, ?, ?, ?, ?)
-2024-11-28T19:29:12.644-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0
-2024-11-28T19:29:26.927-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0 
-    where
-        e1_0.cnpj=?
-2024-11-28T19:29:26.935-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
-    select
-        nextval('seq_estabelecimento')
-2024-11-28T19:29:26.935-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
-    insert 
-    into
-        estabelecimento
-        (cidade, cnpj, endereco, nome_estabelecimento, id_estabelecimento) 
-    values
-        (?, ?, ?, ?, ?)
-2024-11-28T19:29:39.246-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0 
-    where
-        e1_0.cnpj=?
-2024-11-28T19:29:39.254-03:00  WARN 16152 --- [Produto] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.prova.Produto.services.exceptions.DataIntegrityViolationException: Cnpj já cadastrado]
-2024-11-28T19:29:46.012-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0 
-    where
-        e1_0.cnpj=?
-2024-11-28T19:29:46.024-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
-    insert 
-    into
-        estabelecimento
-        (cidade, cnpj, endereco, nome_estabelecimento, id_estabelecimento) 
-    values
-        (?, ?, ?, ?, ?)
-2024-11-28T19:29:50.166-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0
-2024-11-28T19:31:12.170-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0
-2024-11-28T19:31:16.796-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        p1_0.id_produto,
-        p1_0.avaliacao,
-        p1_0.categoria,
-        p1_0.data_exposicao,
-        p1_0.descricao,
-        p1_0.idestabelecimento,
-        p1_0.peso,
-        p1_0.qtd_vendido,
-        p1_0.status,
-        p1_0.tamanho,
-        p1_0.val_unit,
-        p1_0.idvendedor 
-    from
-        produto p1_0 
-    where
-        p1_0.descricao=?
-2024-11-28T19:31:16.804-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.id_vendedor=?
-2024-11-28T19:31:16.804-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0 
-    where
-        e1_0.id_estabelecimento=?
-2024-11-28T19:31:16.804-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        nextval('seq_produto')
-2024-11-28T19:31:16.812-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
-    insert 
-    into
-        produto
-        (avaliacao, categoria, data_exposicao, descricao, idestabelecimento, peso, qtd_vendido, status, tamanho, val_unit, idvendedor, id_produto) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2024-11-28T19:31:20.054-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        p1_0.id_produto,
-        p1_0.avaliacao,
-        p1_0.categoria,
-        p1_0.data_exposicao,
-        p1_0.descricao,
-        p1_0.idestabelecimento,
-        p1_0.peso,
-        p1_0.qtd_vendido,
-        p1_0.status,
-        p1_0.tamanho,
-        p1_0.val_unit,
-        p1_0.idvendedor 
-    from
-        produto p1_0
-2024-11-28T19:31:20.054-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0 
-    where
-        e1_0.id_estabelecimento=?
-2024-11-28T19:31:20.054-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.id_vendedor=?
-2024-11-28T19:31:20.062-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0 
-    where
-        e1_0.id_estabelecimento=?
-2024-11-28T19:31:20.062-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.id_vendedor=?
-2024-11-28T19:32:12.184-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
-    select
-        p1_0.id_produto,
-        p1_0.avaliacao,
-        p1_0.categoria,
-        p1_0.data_exposicao,
-        p1_0.descricao,
-        p1_0.idestabelecimento,
-        p1_0.peso,
-        p1_0.qtd_vendido,
-        p1_0.status,
-        p1_0.tamanho,
-        p1_0.val_unit,
-        p1_0.idvendedor 
-    from
-        produto p1_0 
-    where
-        p1_0.descricao=?
-2024-11-28T19:32:12.186-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0 
-    where
-        e1_0.id_estabelecimento=?
-2024-11-28T19:32:12.187-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.id_vendedor=?
-2024-11-28T19:32:12.191-03:00  WARN 16152 --- [Produto] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.prova.Produto.services.exceptions.DataIntegrityViolationException: Descrição já cadastrada]
-2024-11-28T19:32:14.427-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
-    select
-        p1_0.id_produto,
-        p1_0.avaliacao,
-        p1_0.categoria,
-        p1_0.data_exposicao,
-        p1_0.descricao,
-        p1_0.idestabelecimento,
-        p1_0.peso,
-        p1_0.qtd_vendido,
-        p1_0.status,
-        p1_0.tamanho,
-        p1_0.val_unit,
-        p1_0.idvendedor 
-    from
-        produto p1_0 
-    where
-        p1_0.descricao=?
-2024-11-28T19:32:14.427-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.id_vendedor=?
-2024-11-28T19:32:14.427-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0 
-    where
-        e1_0.id_estabelecimento=?
-2024-11-28T19:32:14.435-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
-    insert 
-    into
-        produto
-        (avaliacao, categoria, data_exposicao, descricao, idestabelecimento, peso, qtd_vendido, status, tamanho, val_unit, idvendedor, id_produto) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2024-11-28T19:32:17.318-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
-    select
-        p1_0.id_produto,
-        p1_0.avaliacao,
-        p1_0.categoria,
-        p1_0.data_exposicao,
-        p1_0.descricao,
-        p1_0.idestabelecimento,
-        p1_0.peso,
-        p1_0.qtd_vendido,
-        p1_0.status,
-        p1_0.tamanho,
-        p1_0.val_unit,
-        p1_0.idvendedor 
-    from
-        produto p1_0
-2024-11-28T19:32:17.318-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0 
-    where
-        e1_0.id_estabelecimento=?
-2024-11-28T19:32:17.326-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.id_vendedor=?
-2024-11-28T19:32:17.326-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0 
-    where
-        e1_0.id_estabelecimento=?
-2024-11-28T19:32:17.326-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.id_vendedor=?
-2024-11-28T19:32:41.424-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
-    select
-        p1_0.id_produto,
-        p1_0.avaliacao,
-        p1_0.categoria,
-        p1_0.data_exposicao,
-        p1_0.descricao,
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento,
-        p1_0.peso,
-        p1_0.qtd_vendido,
-        p1_0.status,
-        p1_0.tamanho,
-        p1_0.val_unit,
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        produto p1_0 
-    left join
-        estabelecimento e1_0 
-            on e1_0.id_estabelecimento=p1_0.idestabelecimento 
-    left join
-        vendedor v1_0 
-            on v1_0.id_vendedor=p1_0.idvendedor 
-    where
-        p1_0.id_produto=?
-2024-11-28T19:32:41.455-03:00 DEBUG 16152 --- [Produto] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
-    delete 
-    from
-        produto 
-    where
-        id_produto=?
-2024-11-28T19:33:47.544-03:00  INFO 16152 --- [Produto] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-28T19:33:47.544-03:00 TRACE 16152 --- [Produto] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@4fa58cc7] for TypeConfiguration
-2024-11-28T19:33:47.544-03:00 DEBUG 16152 --- [Produto] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@7ee98c3f] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@4fa58cc7]
-2024-11-28T19:33:47.569-03:00  INFO 16152 --- [Produto] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-28T19:33:47.569-03:00  INFO 16152 --- [Produto] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-28T19:34:18.578-03:00  INFO 12660 --- [Produto] [restartedMain] com.prova.Produto.ProdutoApplication     : Starting ProdutoApplication using Java 17.0.12 with PID 12660 (C:\ProjetoSpring\Produto\target\classes started by Vitinho in C:\ProjetoSpring\Produto)
-2024-11-28T19:34:18.583-03:00  INFO 12660 --- [Produto] [restartedMain] com.prova.Produto.ProdutoApplication     : The following 1 profile is active: "dev"
-2024-11-28T19:34:18.663-03:00  INFO 12660 --- [Produto] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-11-28T19:34:18.663-03:00  INFO 12660 --- [Produto] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-11-28T19:34:19.270-03:00  INFO 12660 --- [Produto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-28T19:34:19.322-03:00  INFO 12660 --- [Produto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
-2024-11-28T19:34:20.296-03:00  INFO 12660 --- [Produto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-11-28T19:34:20.304-03:00  INFO 12660 --- [Produto] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-28T19:34:20.304-03:00  INFO 12660 --- [Produto] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-28T19:34:20.356-03:00  INFO 12660 --- [Produto] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-28T19:34:20.356-03:00  INFO 12660 --- [Produto] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1693 ms
-2024-11-28T19:34:20.396-03:00  INFO 12660 --- [Produto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-28T19:34:20.653-03:00  INFO 12660 --- [Produto] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c5bfd28
-2024-11-28T19:34:20.653-03:00  INFO 12660 --- [Produto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-28T19:34:20.669-03:00  INFO 12660 --- [Produto] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/Produto'
-2024-11-28T19:34:20.822-03:00  INFO 12660 --- [Produto] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-28T19:34:20.927-03:00  INFO 12660 --- [Produto] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-28T19:34:20.992-03:00  INFO 12660 --- [Produto] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-28T19:34:21.107-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@6ad48c07
-2024-11-28T19:34:21.107-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@6ad48c07
-2024-11-28T19:34:21.107-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@6ad48c07
-2024-11-28T19:34:21.107-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@104fb446
-2024-11-28T19:34:21.107-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@104fb446
-2024-11-28T19:34:21.107-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@42deadc
-2024-11-28T19:34:21.107-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@42deadc
-2024-11-28T19:34:21.107-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@4fc4e65d
-2024-11-28T19:34:21.107-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@4fc4e65d
-2024-11-28T19:34:21.107-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@1beef16
-2024-11-28T19:34:21.107-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@1beef16
-2024-11-28T19:34:21.107-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@1beef16
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@6cbe96e3
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@6cbe96e3
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@6cbe96e3
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@190086ab
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@190086ab
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@19112e6
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@711a938c
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@711a938c
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@1ed58f19
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@37d77b6
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@af2531d
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@af2531d
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@af2531d
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@2f51373c
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@2f51373c
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@2f51373c
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@1dcec888
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@1dcec888
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@1dcec888
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@75e6dc40
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@75e6dc40
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@75e6dc40
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@6d94035a
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@6d94035a
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@6d94035a
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@4b5a3103
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@4b5a3103
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@203b3a68
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@203b3a68
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@637cf6f3
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@637cf6f3
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@637cf6f3
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@2e3fb715
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@347749f8
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@347749f8
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@4de6cd64
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@49297145
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@49297145
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@49297145
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@1a7df06a
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@144b4254
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@6f3d2054
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@6d1cc7af
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@6d1cc7af
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@181794c6
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@181794c6
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@56003c72
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@50399966
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@5b931d71
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@7f060361
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@2832435f
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@34dc0d96
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@7767f6e9
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@7767f6e9
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@3835ee6f
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@3835ee6f
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@2277a8d
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@2277a8d
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@56c377e2
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@56c377e2
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@1e5b136d
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@1e5b136d
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@98ac05f
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@304030f1
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@7d713d7c
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@7d713d7c
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@3b7799c4
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@64202ecd
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@55564d00
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@21b8000b
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@21b8000b
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@26860441
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@4335001a
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@24ec7b31
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@24ec7b31
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@45b58fff
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@45b58fff
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@53872f04
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@53872f04
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@53872f04
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@3859d0be
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@3859d0be
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@3859d0be
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@7fab1177
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@1688b30a
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@7c9d41d0
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@7c9d41d0
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@ab7a2dd
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@ab7a2dd
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@ab7a2dd
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@2d302a55
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@7e73cc1a
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@68f681c5
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@68f681c5
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@5fe0774c
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@5fe0774c
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@5fe0774c
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@73ae9c67
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@73ae9c67
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@13dd9d14
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@13dd9d14
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@4f79ce03
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@4f79ce03
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@137f8ab7
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@137f8ab7
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@1435611b
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@1435611b
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@6bff6bb4
-2024-11-28T19:34:21.115-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@6a77a91e
-2024-11-28T19:34:21.123-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@2c17a917
-2024-11-28T19:34:21.123-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@2c17a917
-2024-11-28T19:34:21.123-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@50161d7d
-2024-11-28T19:34:21.123-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@653c15d4
-2024-11-28T19:34:21.123-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@37e82254
-2024-11-28T19:34:21.123-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@881343e
-2024-11-28T19:34:21.123-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@681c2da6
-2024-11-28T19:34:21.123-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@6d8b17c4
-2024-11-28T19:34:21.123-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@1b8772a3
-2024-11-28T19:34:21.123-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@1a269529
-2024-11-28T19:34:21.123-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@135eead6
-2024-11-28T19:34:21.488-03:00  INFO 12660 --- [Produto] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-28T19:34:21.628-03:00 DEBUG 12660 --- [Produto] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@5ccdcab7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@6cc0e0b4)
-2024-11-28T19:34:21.628-03:00 DEBUG 12660 --- [Produto] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4f27f85) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@50760fe4)
-2024-11-28T19:34:21.631-03:00 DEBUG 12660 --- [Produto] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2004, BlobTypeDescriptor(BLOB_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
-2024-11-28T19:34:21.631-03:00 DEBUG 12660 --- [Produto] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(CLOB_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
-2024-11-28T19:34:21.639-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration JAVA_OBJECT -> org.hibernate.type.JavaObjectType@146cfb44
-2024-11-28T19:34:21.639-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@146cfb44
-2024-11-28T19:34:21.639-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Type registration key [java.lang.Object] overrode previous entry : `org.hibernate.type.JavaObjectType@2c17a917`
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
-2024-11-28T19:34:21.647-03:00 DEBUG 12660 --- [Produto] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@58a119ab] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@172ffa89]
-2024-11-28T19:34:22.507-03:00  INFO 12660 --- [Produto] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-28T19:34:22.507-03:00 DEBUG 12660 --- [Produto] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@58a119ab] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@4400be5c]
-2024-11-28T19:34:22.515-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    alter table if exists produto 
-       drop constraint if exists FKtaovk9dkbhhk2ujejtkv32wll
-2024-11-28T19:34:22.541-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    alter table if exists produto 
-       drop constraint if exists FKciki63r7nyyex2fo5lwsl2ccw
-2024-11-28T19:34:22.541-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    drop table if exists estabelecimento cascade
-2024-11-28T19:34:22.541-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    drop table if exists produto cascade
-2024-11-28T19:34:22.549-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    drop table if exists vendedor cascade
-2024-11-28T19:34:22.549-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    drop sequence if exists seq_estabelecimento
-2024-11-28T19:34:22.549-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    drop sequence if exists seq_produto
-2024-11-28T19:34:22.549-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    drop sequence if exists seq_vendedor
-2024-11-28T19:34:22.557-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    create sequence seq_estabelecimento start with 1 increment by 50
-2024-11-28T19:34:22.565-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    create sequence seq_produto start with 1 increment by 50
-2024-11-28T19:34:22.565-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    create sequence seq_vendedor start with 1 increment by 50
-2024-11-28T19:34:22.565-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    create table estabelecimento (
-        id_estabelecimento integer not null,
-        cidade varchar(255) not null,
-        cnpj varchar(255) not null unique,
-        endereco varchar(255) not null,
-        nome_estabelecimento varchar(255) not null,
-        primary key (id_estabelecimento)
-    )
-2024-11-28T19:34:22.574-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    create table produto (
-        avaliacao smallint check (avaliacao between 0 and 4),
-        data_exposicao date,
-        idestabelecimento integer,
-        idvendedor integer,
-        qtd_vendido integer not null,
-        status smallint check (status between 0 and 1),
-        val_unit numeric(17,2) not null,
-        id_produto bigint not null,
-        categoria varchar(255) not null,
-        descricao varchar(255) not null unique,
-        peso varchar(255) not null,
-        tamanho varchar(255) not null,
-        primary key (id_produto)
-    )
-2024-11-28T19:34:22.581-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    create table vendedor (
-        id_vendedor integer not null,
-        cargo varchar(255) not null,
-        cep varchar(255) not null,
-        cpf varchar(255) not null unique,
-        nome_vendedor varchar(255) not null,
-        rg varchar(255) not null unique,
-        salario varchar(255) not null,
-        primary key (id_vendedor)
-    )
-2024-11-28T19:34:22.590-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    alter table if exists produto 
-       add constraint FKtaovk9dkbhhk2ujejtkv32wll 
-       foreign key (idestabelecimento) 
-       references estabelecimento
-2024-11-28T19:34:22.598-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    alter table if exists produto 
-       add constraint FKciki63r7nyyex2fo5lwsl2ccw 
-       foreign key (idvendedor) 
-       references vendedor
-2024-11-28T19:34:22.598-03:00 TRACE 12660 --- [Produto] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@4400be5c] for TypeConfiguration
-2024-11-28T19:34:22.598-03:00  INFO 12660 --- [Produto] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-28T19:34:23.077-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    select
-        nextval('seq_vendedor')
-2024-11-28T19:34:23.166-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    insert 
-    into
-        vendedor
-        (cargo, cep, cpf, nome_vendedor, rg, salario, id_vendedor) 
-    values
-        (?, ?, ?, ?, ?, ?, ?)
-2024-11-28T19:34:23.202-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    select
-        nextval('seq_estabelecimento')
-2024-11-28T19:34:23.202-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    insert 
-    into
-        estabelecimento
-        (cidade, cnpj, endereco, nome_estabelecimento, id_estabelecimento) 
-    values
-        (?, ?, ?, ?, ?)
-2024-11-28T19:34:23.202-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    select
-        nextval('seq_produto')
-2024-11-28T19:34:23.211-03:00 DEBUG 12660 --- [Produto] [restartedMain] org.hibernate.SQL                        : 
-    insert 
-    into
-        produto
-        (avaliacao, categoria, data_exposicao, descricao, idestabelecimento, peso, qtd_vendido, status, tamanho, val_unit, idvendedor, id_produto) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2024-11-28T19:34:23.310-03:00  WARN 12660 --- [Produto] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-28T19:34:23.790-03:00  INFO 12660 --- [Produto] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-11-28T19:34:23.826-03:00  INFO 12660 --- [Produto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-11-28T19:34:23.842-03:00  INFO 12660 --- [Produto] [restartedMain] com.prova.Produto.ProdutoApplication     : Started ProdutoApplication in 5.677 seconds (process running for 6.053)
-2024-11-28T19:34:30.542-03:00  INFO 12660 --- [Produto] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-28T19:34:30.542-03:00  INFO 12660 --- [Produto] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-28T19:34:30.542-03:00  INFO 12660 --- [Produto] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-11-28T19:34:30.695-03:00 DEBUG 12660 --- [Produto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
-    select
-        p1_0.id_produto,
-        p1_0.avaliacao,
-        p1_0.categoria,
-        p1_0.data_exposicao,
-        p1_0.descricao,
-        p1_0.idestabelecimento,
-        p1_0.peso,
-        p1_0.qtd_vendido,
-        p1_0.status,
-        p1_0.tamanho,
-        p1_0.val_unit,
-        p1_0.idvendedor 
-    from
-        produto p1_0
-2024-11-28T19:34:30.698-03:00 DEBUG 12660 --- [Produto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0 
-    where
-        e1_0.id_estabelecimento=?
-2024-11-28T19:34:30.706-03:00 DEBUG 12660 --- [Produto] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0 
-    where
-        v1_0.id_vendedor=?
-2024-11-28T19:34:34.456-03:00 DEBUG 12660 --- [Produto] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
-    select
-        e1_0.id_estabelecimento,
-        e1_0.cidade,
-        e1_0.cnpj,
-        e1_0.endereco,
-        e1_0.nome_estabelecimento 
-    from
-        estabelecimento e1_0
-2024-11-28T19:34:37.928-03:00 DEBUG 12660 --- [Produto] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        v1_0.id_vendedor,
-        v1_0.cargo,
-        v1_0.cep,
-        v1_0.cpf,
-        v1_0.nome_vendedor,
-        v1_0.rg,
-        v1_0.salario 
-    from
-        vendedor v1_0
-2024-11-28T19:37:28.625-03:00  INFO 12660 --- [Produto] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-28T19:37:28.625-03:00 TRACE 12660 --- [Produto] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@4400be5c] for TypeConfiguration
-2024-11-28T19:37:28.625-03:00 DEBUG 12660 --- [Produto] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@60c6d34c] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@4400be5c]
-2024-11-28T19:37:28.625-03:00  INFO 12660 --- [Produto] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-28T19:37:28.633-03:00  INFO 12660 --- [Produto] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-20T20:47:57.696-03:00  WARN 784 --- [Produto] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-20T20:47:58.151-03:00  INFO 784 --- [Produto] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-20T20:47:58.182-03:00  INFO 784 --- [Produto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-20T20:47:58.198-03:00  INFO 784 --- [Produto] [restartedMain] com.prova.Produto.ProdutoApplication     : Started ProdutoApplication in 6.499 seconds (process running for 7.511)
+2025-02-20T20:48:02.781-03:00  INFO 784 --- [Produto] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20T20:48:02.781-03:00 TRACE 784 --- [Produto] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@b55c729] for TypeConfiguration
+2025-02-20T20:48:02.781-03:00 DEBUG 784 --- [Produto] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@763a75e9] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@b55c729]
+2025-02-20T20:48:02.781-03:00  INFO 784 --- [Produto] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-20T20:48:02.781-03:00  INFO 784 --- [Produto] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
